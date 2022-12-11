@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>sample webpage</title>
+<link rel="stylesheet" href="tyle.css">
+<style>
+body{ background-image: url('carsale.jpg');background-repeat: no-repeat; background-attachment: fixed; background-size:cover;}
+</style>
+</head>
+<body>
+
+<div class="banner">
+<div class="navbar" id="navLinks">
+<img  src="logo.png" class="logo"> </img>
+
+<ul>
+   <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"> Register</button>
+
+<div id="id02" class="modal">
+ 
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="fname"><b>FirstName</b></label>
+      <input type="text" placeholder="Enter FirstName" name="fname" required>
+
+      <label for="lname"><b>LastName</b></label>
+      <input type="text" placeholder="Enter LastName" name="lname" required>
+ 
+       <label for="email"><b>Email</b></label>
+       <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+       <label for="Nic"><b>NIC(id)</b></label>
+        <input type="psw" placeholder="Enter Nic" name="psw" required>
+
+         <label for="Home Town"><b>Home Town</b></label>
+        <input type="text" placeholder="Enter Home Town" name="HT" required>
+        
+      <button type="submit">Register</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+   <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+ 
+    </div>
+  </form>
+</div>
+
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+   
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot<a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</ul>
+</div>
+</div>
+
+<div class="text-box">
+<h1> FIND THE BEST WEHICLE FOR YOU </h1>
+<p> BUY THE CAR YOU WANT<br>DRIVE THE ROAD YOU WANT</p>
+
+<div class="search-box">
+
+<div class="custom-select"
+style="width:200px;">
+<select>
+<option value="0">Select Model:</option>
+<option value="1">Audi</option>
+<option value="2">Benze</option>
+<option value="3">BMW</option>
+<option value="4">Citroen</option>
+<option value="5">Ford</option>
+<option value="6">Honda</option>
+<option value="7">Jaguar</option>
+<option value="8">Land Rover</option>
+<option value="9">Mercedes</option>
+<option value="10">Mini</option>
+<option value="11">Nissan</option>
+<option value="12">Toyota</option>
+<option value="13">Volvo</option>
+</select>
+</div>
+
+<div class="custom-select"
+style="width:200px;">
+<select>
+<option value="0">Select Type:</option>
+<option value="1">Convertible</option>
+<option value="2">Coupe</option>
+<option value="3">Diesel Car</option>
+<option value="4">Electric Car</option>
+<option value="5">Hatchbacks</option>
+<option value="6">Hybrid Car</option>
+<option value="7">Luxury</option>
+<option value="8">Micro</option>
+<option value="9">Sedan</option>
+<option value="10">Sports Car</option>
+<option value="11">SUV</option>
+</select>
+</div>
+<br>
+<button class="search-btn"
+type="button" >search</button>
+</div>
+</div>
+
+<div class="footer-basic">
+<frame>
+<footer>
+<p class="copyright">24/7 CARS &#169;2021</p>
+<p class="copyright">A.umakaran</p>
+</footer>
+</div>
+</body>
+</html>
